@@ -12,7 +12,7 @@ export default function Home() {
             <Image
               src={ProfilePic}
               alt="Profile picture of Mandeep Singh."
-              className="w-full h-auto"
+              className="w-auto h-auto -mt-20"
             />
           </div>
           <div className="w-1/2 flex flex-col items-center self-center">
