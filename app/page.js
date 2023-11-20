@@ -1,7 +1,8 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import ProfilePic from "../public/images/profile/profile-pic.png";
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedHeadings from "@/components/AnimatedHeadings";
+import AnimatedHomePageText from "@/components/AnimatedHomepageText";
 
 export default function Home() {
   return (
@@ -16,10 +17,11 @@ export default function Home() {
             />
           </div>
           <div className="w-1/2 flex flex-col items-center self-center">
-            <AnimatedText
+            <AnimatedHeadings
               text="Hello, my name is Mandeep Singh."
               className="!text-6xl !text-left"
             />
+            <AnimatedHomePageText />
             {/* <p>
               Former I.T Technician for 10 years turned full-stack software
               developer. Having developed essential soft skills including
