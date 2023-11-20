@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import ProfilePic from "../public/images/profile/profile-pic.png";
+import AnimatedText from "@/components/AnimatedText";
 
 export default function Home() {
   return (
@@ -10,9 +11,23 @@ export default function Home() {
           <div className="w-1/2">
             <Image
               src={ProfilePic}
-              alt="Profile picture of Mandeep Singh"
+              alt="Profile picture of Mandeep Singh."
               className="w-full h-auto"
             />
+          </div>
+          <div className="w-1/2 flex flex-col items-center self-center">
+            <AnimatedText
+              text="Hello, my name is Mandeep Singh."
+              className="!text-6xl !text-left"
+            />
+            {/* <p>
+              Former I.T Technician for 10 years turned full-stack software
+              developer. Having developed essential soft skills including
+              problem-solving, communication, and teamwork in my previous role
+              along with a willingness to learn and grow professionally, I now
+              want to combine both variables to build a long and successful
+              career in software development.
+            </p> */}
           </div>
         </div>
       </Layout>
