@@ -2,6 +2,7 @@ import AnimatedHeadings from "@/components/AnimatedHeadings";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import ProfilePic from "../../public/images/profile/profile-pic-1.png";
+import Skills from "@/components/Skills";
 
 export const metadata = {
   title: "Mandeep Singh | About Page",
@@ -78,6 +79,7 @@ export default function Page() {
             </div>
           </div>
         </div>
+        <Skills />
       </Layout>
     </main>
   );
