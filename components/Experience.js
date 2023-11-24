@@ -69,6 +69,7 @@ const Experience = () => {
           <WorkDetails
             position="Service Desk Analyst"
             company="Emap"
+            // companyLink="https://www.emap.com/"
             time="December 2023 - Present"
             address="London, England"
             work="In nisi incididunt deserunt fugiat eiusmod dolore enim dolore exercitation labore velit Lorem laborum."
@@ -77,6 +78,7 @@ const Experience = () => {
           <WorkDetails
             position="Trainee Full Stack Software Developer"
             company="Northcoders"
+            // companyLink="https://northcoders.com/"
             time="January - April 2023"
             address="Remote"
             work="In nisi incididunt deserunt fugiat eiusmod dolore enim dolore exercitation labore velit Lorem laborum."
@@ -85,6 +87,7 @@ const Experience = () => {
           <WorkDetails
             position="I.T Technician"
             company="Granular I.T"
+            // companyLink="https://granularit.com/"
             time="Feburary 2012 - December 2022"
             address="London, England"
             work="In nisi incididunt deserunt fugiat eiusmod dolore enim dolore exercitation labore velit Lorem laborum."

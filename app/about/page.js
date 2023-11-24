@@ -4,6 +4,7 @@ import Image from "next/image";
 import ProfilePic from "../../public/images/profile/profile-pic-1.png";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 export const metadata = {
   title: "Mandeep Singh | About Page",
@@ -82,6 +83,7 @@ export default function Page() {
         </div>
         <Skills />
         <Experience />
+        <Education />
       </Layout>
     </main>
   );
