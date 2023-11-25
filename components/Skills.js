@@ -29,6 +29,8 @@ const Skills = () => {
                   src={skill.imageUrl}
                   alt={skill.name}
                   className="w-auto h-auto object-contain"
+                  priority={true}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </motion.div>
               <h1 className="mt-3 flex justify-center whitespace-nowrap">
