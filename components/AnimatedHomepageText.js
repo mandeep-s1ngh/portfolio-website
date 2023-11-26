@@ -38,7 +38,7 @@ const AnimatedHomePageText = ({ text, className = "" }) => {
         variants={paragraphAnimation}
         initial="initial"
         animate="animate"
-        className="my-4 text-sm/7 font-medium"
+        className="my-4 text-sm/7 font-medium md:text-sm sm:text-xs"
       >
         Former I.T Technician turned full-stack software developer. Having
         developed skills including problem-solving, communication, and teamwork
@@ -50,7 +50,7 @@ const AnimatedHomePageText = ({ text, className = "" }) => {
         variants={linkAnimation}
         initial="initial"
         animate="animate"
-        className="flex items-center self-start mt-2"
+        className="flex items-center self-start mt-2 lg:self-center"
       >
         <Link
           href="/dummy.pdf"
