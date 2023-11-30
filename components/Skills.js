@@ -11,7 +11,10 @@ const Skills = () => {
   return (
     <>
       <div className="py-10 flex flex-col">
-        <h2 className="font-bold text-8xl mt-64 w-full text-center">Skills</h2>
+        <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl xs:text-4xl">
+          Skills
+        </h2>
+        {/* <h2 className="font-bold text-8xl mt-64 w-full text-center">Skills</h2> */}
         {/* <h3 className="text-2xl mt-10 w-full text-center">
           These are the frameworks, languages, libraries, and tools I have used
           and gained exposure to during my time as a developer.
