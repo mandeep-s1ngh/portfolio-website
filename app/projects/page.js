@@ -18,12 +18,12 @@ export const metadata = {
 
 const FeaturedProject = ({ type, title, summary, img, link }) => {
   return (
-    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl" />
+    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <Image
           src={img}
@@ -34,8 +34,8 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
         />
       </Link>
 
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
           {type}
         </span>
         <Link
@@ -43,7 +43,7 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
             {title}
           </h2>
         </Link>
@@ -55,7 +55,7 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
           <Link
             href={link}
             target="_blank"
-            className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark"
+            className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
           >
             Source Code
           </Link>
@@ -68,8 +68,8 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
 const Project = ({ title, type, img, link, github, summary, buttonText }) => {
   const displayText = buttonText || "Source Code";
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
@@ -85,7 +85,7 @@ const Project = ({ title, type, img, link, github, summary, buttonText }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
           {type}
         </span>
         <Link
@@ -93,20 +93,24 @@ const Project = ({ title, type, img, link, github, summary, buttonText }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
             href={link}
             target="_blank"
-            className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark"
+            className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark md:text-base"
           >
             {/* Visit Project */}
             {displayText}
           </Link>
           {github && (
-            <Link href={github} target="_blank" className="w-8">
+            <Link href={github} target="_blank" className="w-8 md:w-6">
               <GithubIcon />
             </Link>
           )}
@@ -120,9 +124,12 @@ export default function Page() {
   return (
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <Layout className="pt-16">
-        <AnimatedHeadings text="My Projects!" className="mb-16" />
+        <AnimatedHeadings
+          text="My Projects!"
+          className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+        />
 
-        <div className="grid grid-cols-12 gap-24 gap-y-32">
+        <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
           <div className="col-span-12">
             <FeaturedProject
               title="Event Buddy"
@@ -132,64 +139,64 @@ export default function Page() {
               type="Featured Project"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 sm:col-span-12">
             <Project
               title="News Yourself In The Moment"
               img={news}
               link="https://news-control.netlify.app/"
               github="https://github.com/mandeep-s1ngh/nc-news"
               type="News Website"
-              summary="A news website built using JavaScript and React as part of the front-end phase of the Northcoders bootcamp."
+              summary="Built using JavaScript & React during the front-end phase of the Northcoders bootcamp."
               buttonText="Live Link"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 sm:col-span-12">
             <Project
-              title="News API"
+              title="Northcoders News API"
               img={api}
               link="https://nc-news-api-e6xe.onrender.com/api"
               github="https://github.com/mandeep-s1ngh/be-nc-news"
               type="API"
-              summary="An API that interacts with my news website built using Express and PostgreSQL as part of the back-end phase of the Northcoders bootcamp."
+              summary="Built using Express & PostgreSQL during the back-end phase of the bootcamp."
               buttonText="Live Link"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 sm:col-span-12">
             <Project
               title="NextJS Blog"
               img={blog}
               link="https://nextjs-tutorial-blog-application.vercel.app/"
               github="https://github.com/mandeep-s1ngh/nextjs-tutorial-blog-application"
               type="Blog"
-              summary="A blog built using TypeScript and Next.js as part of gettings hands on with the Next.js framework for the very first time."
+              summary="Built using TypeScript & Next.js as part of gettings hands on with the Next.js framework for the very first time."
               buttonText="Live Link"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 sm:col-span-12">
             <Project
               title="Shopping Cart"
               img={shoppingcart}
               link="https://github.com/mandeep-s1ngh/react-typescript-shopping-cart"
               type="Shopping"
-              summary="A shopping cart built using TypeScript and React in order to gain an understanding of TypeScript and using it with the React framework."
+              summary="Built using TypeScript & React to gain an understanding of TypeScript and using it with the React framework."
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 sm:col-span-12">
             <Project
               title="Message Board"
               img={messageboard}
               link="https://github.com/mandeep-s1ngh/react-message-board"
               type="Message Submission"
-              summary="A messageboard built using JavaScript and React to widen my knowledge of the React framework."
+              summary="Built using JavaScript & React to widen my knowledge of the React framework."
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 sm:col-span-12">
             <Project
               title="Shopping List API"
               img={shoppingapi}
               link="https://github.com/mandeep-s1ngh/Shopping-List-API"
               type="API"
-              summary="An API built using Express and PostgreSQL. This was my first project after completing the Northcoders bootcamp to solidify my understanding of API's."
+              summary="Built using Express & PostgreSQL to solidify my knowledge of API's."
             />
           </div>
         </div>
