@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { LinkArrow } from "./Icons";
+import { LinkArrow } from "./NavBarIcons";
 
 const paragraphAnimation = {
   initial: {

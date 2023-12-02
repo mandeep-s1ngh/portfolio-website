@@ -1,5 +1,5 @@
 import AnimatedHeadings from "@/components/AnimatedHeadings";
-import { GithubIcon } from "@/components/Icons";
+import { GithubIcon } from "@/components/NavBarIcons";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";

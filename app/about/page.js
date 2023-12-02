@@ -30,30 +30,31 @@ export default function Page() {
             </h2>
             <p className="font-medium">
               Having always had a passion for technology, there was only ever
-              one industry I wanted to build a future in.
+              one career I wanted to build a future in.
             </p>
 
             <p className="my-4 font-medium">
               I began my journey with an I.T apprenticeship. This allowed me to
               enter the industry, study and acquire certifications. It also
-              helped me to land a role as an I.T support professional where I
-              was able to build up my technical knowledge as well as develop
-              transferable skills.
+              helped me to land a role as an I.T Technician where I was able to
+              build up my technical knowledge as well as develop transferable
+              skills.
             </p>
 
             <p className="font-medium">
-              After a decade of service, it was time for a change. I wanted to
-              go on a new adventure. A new career path. So I took a risk and
-              decided to leave my job in tech support and move into software
-              development. This led me do a coding bootcamp where I built 3
-              different projects and learnt fundamental coding skills all within
-              the space of 4 months.
+              After a decade of service, I wanted to go on a new adventure. A
+              new career path. So I decided to leave that role and move into
+              software development. This led me do a coding bootcamp where I
+              built multiple projects and learnt fundamental coding skills all
+              within the space of 4 months.
             </p>
 
             <p className="mt-4 font-medium">
-              It also gave me the desire to regularly enhance my skill set
-              through continuous learning. Since completing the bootcamp, I have
-              not looked backwards. Only forwards!
+              I am now back in a service desk role at a company that values
+              career development. This will allow me to provide my experience to
+              the company before making the transition from within to align with
+              my long term career goals. I am also continuing to self-study and
+              build projects whenever possible.
             </p>
           </div>
           <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark p-8 bg-light dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
@@ -76,7 +77,7 @@ export default function Page() {
                 className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"
                 // className="inline-block text-5xl font-bold md:text-4xl sm:text-3xl xs:text-2xl"
               >
-                10
+                10+
               </span>
               <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                 Years in I.T Support
@@ -88,10 +89,10 @@ export default function Page() {
                 className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"
                 // className="inline-block text-5xl font-bold md:text-4xl sm:text-3xl xs:text-2xl"
               >
-                1
+                5+
               </span>
               <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                Year dev experience
+                Coding Projects Built
               </h2>
             </div>
 

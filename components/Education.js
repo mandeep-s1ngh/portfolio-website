@@ -17,8 +17,7 @@ const EducationDetails = ({ type, time, place, info }) => {
         <motion.div
           initial={{ y: 50 }}
           whileInView={{ y: 0 }}
-          transition={{ duration: 0.5, type: "spring" }}
-          // transition={{ duration: 2.5, type: "spring" }} - MY OWN DURATION
+          transition={{ duration: 1.0, type: "spring" }}
         >
           <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
             {type}
@@ -57,14 +56,14 @@ const Education = () => {
             type="IT Apprenticeship"
             time="Feburary 2011 - November 2011"
             place="QA"
-            info="Exercitation est exercitation elit ea ea pariatur anim laborum ad consectetur cillum culpa."
+            info="Completed an I.T Apprenticeship where I achieved certifications in CompTIA A+ as well as in City & Guilds IT Systems and Principles."
           />
 
           <EducationDetails
             type="GCSEs"
             time="September 2004 - July 2009"
             place="Park View Secondary School"
-            info="Exercitation est exercitation elit ea ea pariatur anim laborum ad consectetur cillum culpa."
+            info="Achieved 10 GCSE Passes A-C in Maths, Chemistry, Biology, Sociology, Religous Studies, History, Physics, English Language, English Literature."
           />
         </ul>
       </div>

@@ -2,30 +2,23 @@ import css from "@/public/images/svgs/icons/css.svg";
 import javascript from "@/public/images/svgs/icons/javascript.svg";
 import html from "@/public/images/svgs/icons/html.svg";
 import react from "@/public/images/svgs/icons/react.svg";
-// import express from "@/public/images/svgs/icons/express.svg";
-import express1 from "@/public/images/svgs/icons/express-1.svg";
+import express from "@/public/images/svgs/icons/express.svg";
 import node from "@/public/images/svgs/icons/node.svg";
 import postgresql from "@/public/images/svgs/icons/postgresql.svg";
 import git from "@/public/images/svgs/icons/git.svg";
-// import github from "@/public/images/svgs/icons/github.svg";
-import github1 from "@/public/images/svgs/icons/github-1.svg";
+import github from "@/public/images/svgs/icons/github.svg";
 import jest from "@/public/images/svgs/icons/jest.svg";
-// import nextjs from "@/public/images/svgs/icons/nextjs.svg";
-import nextjs1 from "@/public/images/svgs/icons/nextjs-1.svg";
+import nextjs from "@/public/images/svgs/icons/nextjs.svg";
 import python from "@/public/images/svgs/icons/python.svg";
-// import aws from "@/public/images/svgs/icons/aws.svg";
-import aws1 from "@/public/images/svgs/icons/aws-1.svg";
-// import reactNative from "@/public/images/svgs/icons/react-native.svg";
+import aws from "@/public/images/svgs/icons/aws.svg";
 import typescript from "@/public/images/svgs/icons/typescript.svg";
 import csharp from "@/public/images/svgs/icons/csharp.svg";
 import tailwindcss from "@/public/images/svgs/icons/tailwindcss.svg";
 import reactrouter from "@/public/images/svgs/icons/reactrouter.svg";
 import vite from "@/public/images/svgs/icons/vitejs.svg";
-// import api from "@/public/images/svgs/icons/api.svg";
-import api1 from "@/public/images/svgs/icons/api-1.svg";
+import api from "@/public/images/svgs/icons/api.svg";
 import dotnet from "@/public/images/svgs/icons/dotnet.svg";
-// import framermotion from "@/public/images/svgs/icons/framermotion.svg";
-import framermotion1 from "@/public/images/svgs/icons/framermotion-1.svg";
+import framermotion from "@/public/images/svgs/icons/framermotion.svg";
 
 export const skills = [
   {
@@ -45,8 +38,7 @@ export const skills = [
     name: "CSS",
   },
   {
-    // imageUrl: express,
-    imageUrl: express1,
+    imageUrl: express,
     name: "Express",
   },
   {
@@ -58,8 +50,7 @@ export const skills = [
     name: "PostgreSQL",
   },
   {
-    // imageUrl: aws,
-    imageUrl: aws1,
+    imageUrl: aws,
     name: "AWS",
   },
   {
@@ -87,13 +78,11 @@ export const skills = [
     name: "Git",
   },
   {
-    // imageUrl: github,
-    imageUrl: github1,
+    imageUrl: github,
     name: "GitHub",
   },
   {
-    // imageUrl: nextjs,
-    imageUrl: nextjs1,
+    imageUrl: nextjs,
     name: "Next.js",
   },
   {
@@ -109,8 +98,7 @@ export const skills = [
     name: "Vite",
   },
   {
-    // imageUrl: api,
-    imageUrl: api1,
+    imageUrl: api,
     name: "RESTful API's",
   },
   {
@@ -118,8 +106,7 @@ export const skills = [
     name: ".NET",
   },
   {
-    // imageUrl: framermotion,
-    imageUrl: framermotion1,
+    imageUrl: framermotion,
     name: "Framer Motion",
   },
 ];

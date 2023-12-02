@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { usePathname, useRouter } from "next/navigation";
-import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./NavBarIcons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 

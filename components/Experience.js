@@ -7,7 +7,7 @@ import ListIcons from "./ListIcons";
 const WorkDetails = ({
   position,
   company,
-  // companyLink,
+  companyLink,
   time,
   address,
   work,
@@ -15,43 +15,37 @@ const WorkDetails = ({
   const ref = useRef(null);
 
   return (
-    <>
-      <li
-        ref={ref}
-        className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+    >
+      <ListIcons reference={ref} />
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 1.0, type: "spring" }}
       >
-        <ListIcons reference={ref} />
-        <motion.div
-          initial={{ y: 50 }}
-          whileInView={{ y: 0 }}
-          // transition={{ duration: 2.5, type: "spring" }} - my own duration
-          transition={{ duration: 0.5, type: "spring" }}
+        <h3 className="capitalize font-bold text-2xl xs:text-sm sm:text-lg md:text-xl lg:text-lg xl:text-lg 2xl:text-xl">
+          {position}&nbsp;
+          <a
+            href={companyLink}
+            target="_blank"
+            className="text-primary dark:text-primaryDark capitalize"
+          >
+            @{company}
+          </a>
+        </h3>
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+          {time} | {address}
+        </span>
+        <p
+          // className="font-normal w-full md:text-sm sm:break-words xs:break-words"
+          className="font-medium w-full md:text-sm"
         >
-          <h3
-            className="capitalize font-bold text-2xl sm:text-xl xs:text-sm"
-            // className="capitalize font-bold text-2xl sm:text-xl xs:text-lg"
-          >
-            {position}&nbsp;
-            <a
-              // href={companyLink}
-              target="_blank"
-              className="text-primary dark:text-primaryDark capitalize"
-            >
-              @{company}
-            </a>
-          </h3>
-          <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
-            {time} | {address}
-          </span>
-          <p
-            // className="font-normal w-full md:text-sm sm:break-words xs:break-words"
-            className="font-medium w-full md:text-sm"
-          >
-            {work}
-          </p>
-        </motion.div>
-      </li>
-    </>
+          {work}
+        </p>
+      </motion.div>
+    </li>
   );
 };
 
@@ -78,28 +72,28 @@ const Experience = () => {
           <WorkDetails
             position="Service Desk Analyst"
             company="Emap"
-            // companyLink="https://www.emap.com/"
+            companyLink="https://www.emap.com/"
             time="December 2023 - Present"
             address="London, England"
-            work="In nisi incididunt deserunt fugiat eiusmod dolore enim dolore exercitation labore velit Lorem laborum."
+            work="Providing technical support to end-users addressing issues and queries through various channels. Collaborating with the team to develop and implement technology related projects and initiatives. Maintaining knowledge of current technology trends to provide up-to-date support and recommendations."
           />
 
           <WorkDetails
             position="Trainee Software Developer"
             company="Northcoders"
-            // companyLink="https://northcoders.com/"
+            companyLink="https://northcoders.com/"
             time="January - April 2023"
             address="Remote"
-            work="In nisi incididunt deserunt fugiat eiusmod dolore enim dolore exercitation labore velit Lorem laborum."
+            work="Completed an intensive 4 month coding bootcamp. Learned fundamentals of JavaScript, industry best practices, how to develop RESTful API's, databases, and front-end applications. Followed agile working practices to create and deliver a full-stack mobile application as part of a collaborative team project."
           />
 
           <WorkDetails
             position="I.T Technician"
             company="Granular I.T"
-            // companyLink="https://granularit.com/"
+            companyLink="https://granularit.com/"
             time="Feburary 2012 - December 2022"
             address="London, England"
-            work="In nisi incididunt deserunt fugiat eiusmod dolore enim dolore exercitation labore velit Lorem laborum."
+            work="Delivered 1st, 2nd, and 3rd line technical support to onsite and remote clients. Developed skills in communication, customer service, problem solving, and teamwork through resolution of support queries."
           />
         </ul>
       </div>
