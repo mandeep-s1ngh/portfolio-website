@@ -25,26 +25,26 @@ const linkAnimation = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 2.7,
+      delay: 1.7,
       duration: 2,
     },
   },
 };
 
-const AnimatedHomePageText = ({ text, className = "" }) => {
+const AnimatedHomePageText = () => {
   return (
     <>
       <motion.p
         variants={paragraphAnimation}
         initial="initial"
         animate="animate"
-        className="my-4 text-sm/7 font-medium md:text-sm sm:text-xs"
+        className="my-4 text-base/7 font-medium md:text-sm"
       >
-        Former I.T Technician turned full-stack software developer. Having
-        developed skills including problem-solving, communication, and teamwork
-        in my previous role along with a willingness to learn and grow
-        professionally, my goals now are to build a career in software
-        development and continue my journey in the technology industry.
+        A technology professional with a decade of experience. During that time,
+        I have accquired skills including problem-solving, communication, and
+        teamwork while developing a passion for continuous learning & growth. My
+        goals are to learn & develop from within my current position, transition
+        into software development, and further my career.
       </motion.p>
       <motion.div
         variants={linkAnimation}

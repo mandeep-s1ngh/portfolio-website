@@ -9,11 +9,11 @@ export default function Home() {
     <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
       <Layout className="pt-0 md:pt-16 sm:pt-8">
         <div className="flex items-center justify-between w-full lg:flex-col">
-          <div className="w-2/5 md:w-full">
+          <div className="md:inline-block w-2/5 xs:w-3/4 sm:w-3/4 md:w-3/4 lg:w-3/4">
             <Image
               src={ProfilePic}
               alt="Profile picture of Mandeep Singh."
-              className="w-full h-auto lg:hidden md:inline-block md:w-full"
+              className="w-full h-auto mb-8 md:inline-block md:w-full"
               priority={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             />
@@ -24,14 +24,6 @@ export default function Home() {
               className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
             />
             <AnimatedHomePageText />
-            {/* <p>
-              Former I.T Technician for 10 years turned full-stack software
-              developer. Having developed essential soft skills including
-              problem-solving, communication, and teamwork in my previous role
-              along with a willingness to learn and grow professionally, I now
-              want to combine both variables to build a long and successful
-              career in software development.
-            </p> */}
           </div>
         </div>
       </Layout>
