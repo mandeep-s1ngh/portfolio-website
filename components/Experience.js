@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import ListIcons from "./ListIcons";
 
@@ -38,12 +38,7 @@ const WorkDetails = ({
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p
-          // className="font-normal w-full md:text-sm sm:break-words xs:break-words"
-          className="font-medium w-full md:text-sm"
-        >
-          {work}
-        </p>
+        <p className="font-medium w-full md:text-sm">{work}</p>
       </motion.div>
     </li>
   );
@@ -75,7 +70,7 @@ const Experience = () => {
             companyLink="https://www.emap.com/"
             time="December 2023 - Present"
             address="London, England"
-            work="Providing technical support to end-users addressing issues and queries through various channels. Collaborating with the team to develop and implement technology related projects and initiatives. Maintaining knowledge of current technology trends to provide up-to-date support and recommendations."
+            work="Providing technical support to end-users addressing issues and queries through various channels. Collaborating with the team to develop and implement technology-related projects and initiatives. Maintaining knowledge of current technology trends to provide up-to-date support and recommendations."
           />
 
           <WorkDetails
@@ -84,16 +79,16 @@ const Experience = () => {
             companyLink="https://northcoders.com/"
             time="January - April 2023"
             address="Remote"
-            work="Completed an intensive 4 month coding bootcamp. Learned fundamentals of JavaScript, industry best practices, how to develop RESTful API's, databases, and front-end applications. Followed agile working practices to create and deliver a full-stack mobile application as part of a collaborative team project."
+            work="Completed an intensive 4-month coding bootcamp. Learned fundamentals of JavaScript, industry best practices, and how to develop RESTful APIs, databases, and front-end applications. Followed agile working practices to create and deliver a full-stack mobile application as part of a collaborative team project."
           />
 
           <WorkDetails
             position="I.T Technician"
             company="Granular I.T"
             companyLink="https://granularit.com/"
-            time="Feburary 2012 - December 2022"
+            time="February 2012 - December 2022"
             address="London, England"
-            work="Delivered 1st, 2nd, and 3rd line technical support to onsite and remote clients. Developed skills in communication, customer service, problem solving, and teamwork through resolution of support queries."
+            work="Delivered 1st, 2nd, and 3rd line technical support to onsite and remote clients. Developed skills in communication, customer service, problem-solving, and teamwork through the resolution of support queries."
           />
         </ul>
       </div>

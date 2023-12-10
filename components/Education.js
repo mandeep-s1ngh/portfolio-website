@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import ListIcons from "./ListIcons";
 
@@ -54,16 +54,16 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <EducationDetails
             type="IT Apprenticeship"
-            time="Feburary 2011 - November 2011"
+            time="February 2011 - November 2011"
             place="QA"
-            info="Completed an I.T Apprenticeship where I achieved certifications in CompTIA A+ as well as in City & Guilds IT Systems and Principles."
+            info="Completed an I.T Apprenticeship where I achieved the following certifications: CompTIA A+, City & Guilds IT Systems and Principles."
           />
 
           <EducationDetails
             type="GCSEs"
             time="September 2004 - July 2009"
             place="Park View Secondary School"
-            info="Achieved 10 GCSE Passes A-C in Maths, Chemistry, Biology, Sociology, Religous Studies, History, Physics, English Language, English Literature."
+            info="Achieved 10 GCSE Passes A-C in Biology, Chemistry, English Language, English Literature, History, Maths, Physics, Religious Studies, Sociology."
           />
         </ul>
       </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { certificates } from "@/app/constants/certificates";
 
@@ -8,22 +7,13 @@ const Certificates = () => {
   return (
     <>
       <div className="flex flex-col">
-        <h2
-          className="font-bold text-8xl w-full text-center md:text-6xl xs:text-4xl"
-          // className="font-bold text-8xl w-full text-center"
-        >
+        <h2 className="font-bold text-8xl w-full text-center md:text-6xl xs:text-4xl">
           Learning
         </h2>
         <p className="font-medium text-center mt-4">
           Life is all about learning. I am always willing to learn and explore
           new technologies and tools.
         </p>
-        {/* <h3
-          className="text-2xl mt-10 w-full text-center"
-        >
-          Life is all about learning. I am always willing to learn and explore
-          new technologies and tools.
-        </h3> */}
         <div className="mt-16 ml-20 flex flex-wrap gap-16 xs:mx-16 sm:mx-24 md:mx-40 lg:mx-12 xl:mx-28 2xl:mx-14">
           {certificates.map((certificate) => (
             <div className="block-container w-60 h-60" key={certificate.name}>

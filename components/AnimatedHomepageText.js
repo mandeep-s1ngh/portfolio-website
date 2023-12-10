@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { LinkArrow } from "./NavBarIcons";
@@ -41,7 +40,7 @@ const AnimatedHomePageText = () => {
         className="my-4 text-base/7 font-medium md:text-sm"
       >
         A technology professional with a decade of experience. During that time,
-        I have accquired skills including problem-solving, communication, and
+        I have acquired skills including problem-solving, communication, and
         teamwork while developing a passion for continuous learning & growth. My
         goals are to learn & develop from within my current position, transition
         into software development, and further my career.

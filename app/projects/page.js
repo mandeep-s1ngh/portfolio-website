@@ -49,9 +49,6 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center">
-          {/* <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
-          </Link> */}
           <Link
             href={link}
             target="_blank"
@@ -106,7 +103,6 @@ const Project = ({ title, type, img, link, github, summary, buttonText }) => {
             target="_blank"
             className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark md:text-base"
           >
-            {/* Visit Project */}
             {displayText}
           </Link>
           {github && (
@@ -134,7 +130,7 @@ export default function Page() {
             <FeaturedProject
               title="Event Buddy"
               img={eventbuddy}
-              summary="A mobile application built using React Native, AWS Lambda, and AWS DynamoDB. This was an agile group project which made up the final phase of the Northcoders bootcamp where we could get hands on with new technology, work as a team, and build a project in 1.5 weeks. It is an app aimed at people who like to go to events."
+              summary="A mobile application built using React Native, AWS Lambda, and AWS DynamoDB. This was an agile group project which made up the final phase of the Northcoders bootcamp where we could get hands-on with new technology, work as a team, and build a project in 1.5 weeks. It is an app aimed at people who like to go to events."
               link="https://github.com/mandeep-s1ngh/event-buddy"
               type="Featured Project"
             />
@@ -168,7 +164,7 @@ export default function Page() {
               link="https://nextjs-tutorial-blog-application.vercel.app/"
               github="https://github.com/mandeep-s1ngh/nextjs-tutorial-blog-application"
               type="Blog"
-              summary="Built using TypeScript & Next.js as part of gettings hands on with the Next.js framework for the very first time."
+              summary="Built using TypeScript & Next.js as part of gettings hands-on with the Next.js framework for the very first time."
               buttonText="Live Link"
             />
           </div>

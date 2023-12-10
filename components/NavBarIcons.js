@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export const GithubIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
