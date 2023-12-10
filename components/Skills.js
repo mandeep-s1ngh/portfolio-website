@@ -16,7 +16,7 @@ const Skills = () => {
         These are the frameworks, languages, libraries, and tools I have used
         and gained exposure to during my time learning software development.
       </p>
-      <div className="mt-16 flex flex-wrap gap-16 xs:mx-5 sm:mx-7 md:mx-18 lg:mx-18 xl:mx-18 2xl:mx-18">
+      <div className="mt-16 flex flex-wrap gap-16 xs:mx-9 sm:mx-7 md:mx-18 lg:mx-16 xl:mx-18 2xl:mx-18">
         {sortedSkills.map((skill) => (
           <div className="block-container w-20 h-20 mb-5" key={skill.name}>
             <div className="rounded-xl" />

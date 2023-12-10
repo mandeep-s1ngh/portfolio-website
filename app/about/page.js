@@ -9,7 +9,8 @@ import Certificates from "@/components/Certificates";
 
 export const metadata = {
   title: "Mandeep Singh | About",
-  description: "Page detailing information about Mandeep Singh",
+  description:
+    "Page detailing information about Mandeep Singh's life including work, education, and skills.",
 };
 
 export default function Page() {

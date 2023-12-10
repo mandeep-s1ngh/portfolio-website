@@ -93,7 +93,7 @@ const Project = ({ title, type, img, link, github, summary, buttonText }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-base 2xl:text-xl">
             {title}
           </h2>
         </Link>
@@ -125,7 +125,7 @@ export default function Page() {
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <Layout className="pt-16">
         <AnimatedHeadings
-          text="My Projects!"
+          text="Highlights!"
           className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
         />
 
@@ -146,7 +146,7 @@ export default function Page() {
               link="https://news-control.netlify.app/"
               github="https://github.com/mandeep-s1ngh/nc-news"
               type="News Website"
-              summary="Built using JavaScript & React during the front-end phase of the Northcoders bootcamp."
+              summary="Built using JavaScript & React during the front-end phase of the bootcamp."
               buttonText="Live Link"
             />
           </div>
@@ -187,7 +187,7 @@ export default function Page() {
               img={messageboard}
               link="https://github.com/mandeep-s1ngh/react-message-board"
               type="Message Submission"
-              summary="Built using JavaScript & React to widen my knowledge of the React framework."
+              summary="Built using JavaScript & React to solidify my knowledge of React."
             />
           </div>
           <div className="col-span-6 sm:col-span-12">
@@ -196,7 +196,7 @@ export default function Page() {
               img={shoppingapi}
               link="https://github.com/mandeep-s1ngh/Shopping-List-API"
               type="API"
-              summary="Built using Express & PostgreSQL to solidify my knowledge of API's."
+              summary="Built using Express & Postgres to solidify my knowledge of API's."
             />
           </div>
         </div>
