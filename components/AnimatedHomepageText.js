@@ -39,11 +39,12 @@ const AnimatedHomePageText = () => {
         animate="animate"
         className="my-4 text-base/7 font-medium md:text-sm"
       >
-        A technology professional with a decade of experience. During that time,
-        I have acquired skills including problem-solving, communication, and
-        teamwork while developing a passion for continuous learning & growth. My
-        goals are to learn & develop from within my current position, transition
-        into software development, and further my career.
+        A technology professional with over a decade of experience. During that
+        time, I have acquired skills including problem-solving, communication,
+        and teamwork whilst developing a passion for continuous learning &
+        growth. My goal is to apply those passions within my current role and
+        organization with the aim of tranisitoning into a development role and
+        advancing my career.
       </motion.p>
       <motion.div
         variants={linkAnimation}
@@ -52,7 +53,7 @@ const AnimatedHomePageText = () => {
         className="flex items-center self-start mt-2 lg:self-center"
       >
         <Link
-          href="/dummy.pdf"
+          href="/Mandeep-Singh-CV.pdf"
           target={"_blank"}
           className="flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark md:p-2 md:px-4 md:text-base mr-4 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
         >

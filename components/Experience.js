@@ -84,7 +84,7 @@ const Experience = () => {
 
           <WorkDetails
             position="I.T Technician"
-            company="Granular I.T"
+            company="Granular IT"
             companyLink="https://granularit.com/"
             time="February 2012 - December 2022"
             address="London, England"

@@ -143,7 +143,7 @@ export default function Page() {
               github="https://github.com/mandeep-s1ngh/nc-news"
               type="News Website"
               summary="Built using JavaScript & React during the front-end phase of the bootcamp."
-              buttonText="Live Link"
+              buttonText="Visit Project"
             />
           </div>
           <div className="col-span-6 sm:col-span-12">
@@ -154,7 +154,7 @@ export default function Page() {
               github="https://github.com/mandeep-s1ngh/be-nc-news"
               type="API"
               summary="Built using Express & PostgreSQL during the back-end phase of the bootcamp."
-              buttonText="Live Link"
+              buttonText="Visit Project"
             />
           </div>
           <div className="col-span-6 sm:col-span-12">
@@ -165,7 +165,7 @@ export default function Page() {
               github="https://github.com/mandeep-s1ngh/nextjs-tutorial-blog-application"
               type="Blog"
               summary="Built using TypeScript & Next.js as part of gettings hands-on with the Next.js framework for the very first time."
-              buttonText="Live Link"
+              buttonText="Visit Project"
             />
           </div>
           <div className="col-span-6 sm:col-span-12">

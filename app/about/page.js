@@ -31,9 +31,8 @@ export default function Page() {
             <p className="my-4 font-medium">
               I began my journey with an I.T apprenticeship. This allowed me to
               enter the industry, study and acquire certifications. It also
-              helped me to land a role as an I.T Technician where I was able to
-              build up my technical knowledge as well as develop transferable
-              skills.
+              helped me to land a role in I.T support where I was able to build
+              up my technical knowledge as well as develop transferable skills.
             </p>
 
             <p className="font-medium">
@@ -45,11 +44,14 @@ export default function Page() {
             </p>
 
             <p className="mt-4 font-medium">
-              I am now back in a service desk role at a company that values
-              career development. This will allow me to provide my previous
-              experience to the company before making the transition from within
-              to align with my long-term career goals. I am also continuing to
-              self-study and build projects whenever possible.
+              I am now back in a support role at a company that values career
+              development. This will allow me to provide my previous experience
+              to the company before making the transition from within to align
+              with my long-term career goals.
+            </p>
+
+            <p className="mt-4 font-medium">
+              I am also self-studying and building projects whenever possible.
             </p>
           </div>
           <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark p-8 bg-light dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
